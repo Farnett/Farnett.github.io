@@ -21,6 +21,15 @@
             background-color: black;
             color: white;
             padding: 20px;
+            position: relative; /* Ajustar la posición relativa para la imagen */
+        }
+
+        #fotoFacu {
+            position: absolute; /* Posición absoluta para la imagen */
+            top: 20px; /* Ajustar la posición superior */
+            right: 20px; /* Ajustar la posición derecha */
+            max-width: 200px; /* Ajustar el ancho máximo */
+            height: auto; /* Altura automática para mantener la proporción */
         }
 
         h2 {
@@ -46,12 +55,18 @@
             color: white; 
         }
 
+        #imagenFacu {
+            max-height: 30rem;
+            max-width: 30rem;
+        }
+        
         /* Todas las secciones, excepto la última */
         section:not(:last-child) {
             background-color: #0f0e0e; 
             color: white; /* Color del texto */
             padding: 20px;
         }
+
     </style>
 </head>
 <body>
@@ -101,6 +116,7 @@
         <p><strong>Localidad:</strong> La Rioja, Argentina</p>
         <p><strong>Domicilio:</strong> Caja de Ahorro 729</p>
         <p><strong>Numero de contacto:</strong> 3804272304 </p>
+        <img src="imagenFacu.jpg" alt="Foto Personal" id="imagenFacu">   
     </section>
 </body>
 </html>
